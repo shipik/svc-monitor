@@ -5,7 +5,7 @@ NAME
     check_svc.pl - SAN Volume Controller (SVC) and IBM Storwize monitoring check script
 
 AUTHOR
-    Vladimir Shapovalov <shapovalov@gmail.com>
+    Vladimir Shapovalov
 
 SYNOPSIS
     check_svc.pl CHECK_COMMAND [SVC_IP/NAME] [USER] [PASS]
