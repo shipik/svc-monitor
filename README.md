@@ -5,12 +5,15 @@ NAME
     check_svc.pl - SAN Volume Controller (SVC) and IBM Storwize monitoring check script
 
 AUTHOR
+
     Vladimir Shapovalov
 
 SYNOPSIS
+
     check_svc.pl CHECK_COMMAND [SVC_IP/NAME] [USER] [PASS]
 
 CHECK_COMMAND
+
     check_node
          Displays detailed state information for cluster nodes.
 
@@ -27,6 +30,7 @@ CHECK_COMMAND
          Displays the status of system alerts.
 
 DESCRIPTION
+
     Script uses Expect to login to SVC controller via ssh. There is no additional software required.
 
       14.04.20 V0.1 (vs). Initial version
@@ -51,6 +55,7 @@ LICENSE
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 EXAMPLES
+
     Check physical/local diskd (PDs ) #> check_svc.pl check_pd svc.mycompany.net monitor monitor123
 
     Output:
