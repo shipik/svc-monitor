@@ -291,6 +291,7 @@ Node status return codes:
 |                 |  * online                                         |
 |                 |  * adding                                         |
 |                 |  * deleting                                       |
+|                 |  * spare                                          |
 +-----------------+---------------------------------------------------+
 COMMENT
 
@@ -310,7 +311,7 @@ COMMENT
   foreach my $i (2..$#res){
     next if($res[$i] =~ /^\s*$/);
     $res[$i] =~ /^\s*(\w+)\s+([\w\-]+)\s+(\w+)\s+(\w+)\s+(.*?)\s*$/;
-    if(lc($4) eq "online"){
+    if(lc($4) eq "online" || lc($4) eq "spare"){
       #$nodesTotal++;
     }
     elsif(lc($4) eq "offline"){
